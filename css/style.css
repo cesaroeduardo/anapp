@@ -13,7 +13,9 @@
    START Ana custom CSS
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 .an-block1 {
+    background: #222233;
     padding: 0px 20px 100px;
     min-height: 100vh;
     box-sizing: border-box;
@@ -28,12 +30,14 @@
 }
 
 .an-header {
-    padding: 35px 0;
+    padding: 35px 0 20px 0;
     gap: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #EDEDED;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .an-header span {
@@ -42,6 +46,7 @@
     text-align: center;
     text-transform: uppercase;
     margin: 10px 0;
+    letter-spacing: 3px;
 }
 
 .an-header h1 {
@@ -49,6 +54,8 @@
     font-size: 24px;
     font-weight: 700;
     text-align: center;
+    color: #D5A021;
+    letter-spacing: .5px;
 }
 
 .an-header h2 {
@@ -56,6 +63,7 @@
     font-size: 12px;
     font-weight: 500;
     text-align: center;
+    letter-spacing: .6px;
 }
 
 .an-list {
@@ -64,26 +72,30 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .an-list a {
     width: 100%;
-    border: solid .1px #16161625;
+    border: solid .1px #6E75A870;
     height: 65px;
     display: flex;
     flex-direction: row;
+    font-size: 14px;
+    letter-spacing: 1px;
     gap: 15px;
     align-items: center;
     padding: 0px 20px;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: 500;
-    color: #161616;
+    font-weight: 400;
+    color: #fff;
 }
 
 .an-list a:hover {
     cursor: pointer;
-    background: #16161610;
+    background: #6E75A820;
+    color: #EDEDED;
 }
 
 .an-list a:hover img {
@@ -96,19 +108,24 @@
     display: flex;
     flex-direction: column;
     margin-top: 35px;
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
 }
 
 .an-carrousel h2 {
-    margin: 0 10px 0 0;
+    margin: 0 0 10px 0;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+    color: #D5A021;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .an-projects {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    color: #EDEDED;
 }
 
 .an-projects a {
@@ -118,7 +135,8 @@
     font: 14px;
     text-align: start;
     text-decoration: none;
-    color: #161616;
+    color: #EDEDED;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .an-projects img {
@@ -126,15 +144,26 @@
 }
 
 .an-projects span {
-    font-size: 12px;
-    font-weight: 500;
-    margin-top: 10px;
+    font-size: 12.5px;
+    font-weight: 300;
+    margin-top: 15px;
+    color: #EDEDED;
 }
 
 .an-projects a:hover {
     transition: ease-in-out;
     opacity: .8;
     transition-duration: 100ms;
+    color: #EDEDED;
+}
+
+.an-footer {
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: thin solid #ffffff07;
+    padding: 30px 100px;
 }
 
 
@@ -142,9 +171,8 @@
    END Ana custom CSS 
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
