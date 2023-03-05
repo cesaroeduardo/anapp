@@ -90,6 +90,7 @@
     text-decoration: none;
     font-weight: 400;
     color: #fff;
+    margin: 0;
 }
 
 .an-list a:hover {
