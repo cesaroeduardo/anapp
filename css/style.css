@@ -12,17 +12,31 @@
 /* ==========================================================================
    START Ana custom CSS
    ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+    min-height: 100vh;
+    background: var(--neutral-0) !important;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+:root {
+    --neutral-900: #161616;
+    --neutral-0: #EDEDED; 
+}
+
 .an-block1 {
-    background: #222233;
+    background: var(--neutral-0);
+    margin: 0 auto;
+    width: 800px;
     padding: 0px 20px 100px;
     min-height: 100vh;
     box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template: 1fr 40% / 1fr 60%;
+    gap: 60px;
     justify-content: center;
-    width: 100%;
 }
 
 .an-block2 {
@@ -30,40 +44,38 @@
 }
 
 .an-header {
-    padding: 35px 0 20px 0;
+    padding: 35px 0 40px 0;
     gap: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #EDEDED;
-    font-family: 'Space Grotesk', sans-serif;
+    align-items: center;
+    color: var(--neutral-900);
+}
+
+.an-header img {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
 }
 
 .an-header span {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
-    margin: 10px 0;
-    letter-spacing: 3px;
+    margin: 20px 0 5px 0;
+    letter-spacing: 2px;
 }
 
 .an-header h1 {
     margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    color: #D5A021;
-    letter-spacing: .5px;
-}
-
-.an-header h2 {
-    margin: 0;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     text-align: center;
-    letter-spacing: .6px;
+    color: var(--neutral-900);
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .an-list {
@@ -72,7 +84,6 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 .an-list a {
@@ -89,14 +100,14 @@
     border-radius: 5px;
     text-decoration: none;
     font-weight: 400;
-    color: #fff;
+    color: var(--neutral-900);
     margin: 0;
 }
 
 .an-list a:hover {
     cursor: pointer;
     background: #6E75A820;
-    color: #EDEDED;
+    color: var(--neutral-900);
 }
 
 .an-list a:hover img {
@@ -106,27 +117,35 @@
 }
 
 .an-carrousel {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     margin-top: 35px;
-    font-family: 'Space Grotesk', sans-serif;
     position: relative;
 }
 
 .an-carrousel h2 {
     margin: 0 0 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
-    text-align: center;
-    color: #D5A021;
-    font-family: 'Space Grotesk', sans-serif;
+    text-align: left;
+    letter-spacing: 1px;
+    color: var(--neutral-900);
+}
+.an-carrousel p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 170%;
+    color: var(--neutral-900);
+    text-align: left;
+    letter-spacing: 1px;
 }
 
 .an-projects {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    color: #EDEDED;
+    color: var(--neutral-900);
 }
 
 .an-projects a {
@@ -136,8 +155,7 @@
     font: 14px;
     text-align: start;
     text-decoration: none;
-    color: #EDEDED;
-    font-family: 'Space Grotesk', sans-serif;
+    color: var(--neutral-900);
 }
 
 .an-projects img {
@@ -165,6 +183,32 @@
     justify-content: center;
     border-top: thin solid #ffffff07;
     padding: 30px 100px;
+}
+
+@media screen and (max-width:991px) {
+    .an-block1 {
+        margin: 0 auto;
+        width: 300px;
+        padding: 0px 20px 100px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .an-block2 {
+        width: 300px;
+    }
+    .an-block3 {
+        background: var(--neutral-0);
+        margin: 0 auto;
+        width: 300px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -446,7 +490,6 @@ html {
 body {
     margin: 0;
     min-height: 100%;
-    background-color: #fff;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -2409,64 +2452,6 @@ textarea.w-select {
 /* ==========================================================================
    Start of custom CSS
    ========================================================================== */
-
-body {
-    font-family: Rubik, sans-serif;
-    color: #333;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-h2 {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-family: Rubik, sans-serif;
-    font-size: 44px;
-    line-height: 52px;
-    font-weight: 700;
-}
-
-h3 {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-family: Rubik, sans-serif;
-    color: #333;
-    font-size: 25px;
-    line-height: 38px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: Rubik, sans-serif;
-    color: #333;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-h5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: Roboto;
-    color: grey;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-}
-
-p {
-    margin-bottom: 20px;
-    font-family: Rubik, sans-serif;
-    color: grey;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 300;
-}
 
 .button-neutral {
     height: 75px;
