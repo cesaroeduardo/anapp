@@ -27,6 +27,7 @@ body {
 }
 
 .an-block1 {
+    font-family: 'Space Grotesk', sans-serif;
     background: var(--neutral-0);
     margin: 0 auto;
     width: 800px;
@@ -41,6 +42,7 @@ body {
 
 .an-block2 {
     max-width: 300px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .an-header {
@@ -52,6 +54,7 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--neutral-900);
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .an-header img {
@@ -76,6 +79,7 @@ body {
     color: var(--neutral-900);
     letter-spacing: 3px;
     text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .an-list {
@@ -135,7 +139,7 @@ body {
 }
 .an-carrousel p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 170%;
     color: var(--neutral-900);
     text-align: left;
@@ -164,10 +168,10 @@ body {
 }
 
 .an-projects span {
-    font-size: 12.5px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     margin-top: 15px;
-    line-height: 200%;
+    line-height: 250%;
     color: var(--neutral-900);
 }
 
