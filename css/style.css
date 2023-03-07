@@ -106,7 +106,7 @@ body {
 
 .an-list a:hover {
     cursor: pointer;
-    background: var(--neutral-0);
+    background: #6E75A815;
     color: var(--neutral-900);
 }
 
